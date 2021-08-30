@@ -3382,7 +3382,7 @@ class ElectronChromeExtensions extends events__WEBPACK_IMPORTED_MODULE_1__["Even
       session
     } = this.ctx;
     let preloads = session.getPreloads();
-    const preloadPath = path__WEBPACK_IMPORTED_MODULE_2___default.a.join(this.modulePath, 'dist/preload.js');
+    const preloadPath = this.modulePath;
     const preloadIndex = preloads.indexOf(preloadPath);
 
     if (preloadIndex > -1) {
