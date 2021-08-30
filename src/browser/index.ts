@@ -95,7 +95,7 @@ export class ElectronChromeExtensions extends EventEmitter {
     const { session } = this.ctx
     let preloads = session.getPreloads()
 
-    const preloadPath = path.join(this.modulePath, 'dist/preload.js')
+    const preloadPath = this.modulePath
 
     const preloadIndex = preloads.indexOf(preloadPath)
     if (preloadIndex > -1) {
