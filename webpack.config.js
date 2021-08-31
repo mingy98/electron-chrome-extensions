@@ -9,7 +9,7 @@ const base = {
     rules: [
       {
         test: /\.tsx?$/,
-        exclude: /node_modules/,
+        exclude: /electron-chrome-extensions\/node_modules/,
         use: {
           loader: "babel-loader",
           options: {
